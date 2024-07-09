@@ -1,6 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+/* .baskervville-sc-regular {
+  font-family: "Baskervville SC", serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:"Baskervville SC", serif;
+  font-style: normal;;
+  font-size: 20px;
+  text-shadow: 0px 0px 3px white;
 }
