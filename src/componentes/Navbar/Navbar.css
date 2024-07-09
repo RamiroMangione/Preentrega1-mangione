@@ -1,0 +1,21 @@
+nav {
+    background-color: grey;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+}
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    overflow: hidden;
+}
+li{
+    padding-right: 140px;
+    cursor: pointer;
+
+}
+.carrito{
+    cursor: pointer;
+}

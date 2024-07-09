@@ -1,12 +1,14 @@
 import './App.css'
-import Titulo from './componentes/Titulo'
+import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
+import Navbar from './componentes/Navbar/Navbar'
+import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
 
   return (
       <div>
-        <h1>hola mundo</h1>
-        <Titulo/>
-        <Titulo/>
+        
+        <Navbar/>
+        <ItemListContainer greeting={"Hola, Bienvenido a mi tienda de diarios y revistas"}/>
       </div>
   )
 }
