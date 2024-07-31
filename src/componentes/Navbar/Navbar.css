@@ -14,8 +14,11 @@ ul {
 li{
     padding-right: 140px;
     cursor: pointer;
-
 }
 .carrito{
     cursor: pointer;
+}
+a{
+    text-decoration: none !important;
+    color: black !important;
 }

@@ -1,0 +1,24 @@
+.tarjetas{
+    border-radius: 5px;
+    border-color: black;
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    border-color: black;
+    padding: 10px;
+}
+.tarjeta:hover{
+    background-color: skyblue;
+}
+.tarjeta img{
+    width: 200px;
+    height: 260px;
+    object-fit: contain;
+}
+.tarjeta h3{
+    text-align: center;
+    font-size: 20px;
+}
