@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <nav>
-      <Link to={"Preentrega1-mangione/"} className='logo'>
+      <Link to={"/"} className='logo'>
         <img src={Logo} width="100px" alt="Logo DyRx" />
-        </Link>
+      </Link>
         <ul>
-          <li><Link to={"Preentrega1-mangione/"}>inicio</Link> </li>
+          <li><Link to={"/"}>inicio</Link> </li>
           <li><Link to={"/categoria/diarios"}>Diarios</Link></li>
           <li><Link to={"/categoria/revistas"}>Revistas</Link></li>
           <li><Link to={"/categoria/otros"}>Otros</Link></li>
