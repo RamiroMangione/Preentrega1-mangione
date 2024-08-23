@@ -1,0 +1,34 @@
+.filaProducto{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5px;
+    border-color: black;
+    width: 100%;
+    margin: 1rem;
+}
+.listaProductos{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.total{
+    display: flex;
+    justify-content: space-around;
+}
+.carritoVacio{
+    text-align: center;
+    background-color: rgb(141, 255, 255);
+    height: 100vh;
+}
+
+.volverAlInicio{
+    text-align: center;
+    background-color:rgb(0, 102, 255);
+    font-size: 24px;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: white !important;
+}

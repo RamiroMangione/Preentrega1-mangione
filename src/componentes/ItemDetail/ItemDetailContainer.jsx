@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import productos from '../../data/productos.json'
+import ItemDetail from './ItemDetail'
 
 const ItemDetailContainer = () => {
   const [data, setData] = useState(null)
@@ -34,14 +35,7 @@ const ItemDetailContainer = () => {
   }
 
   return (
-    <div className='container'>
-      <h1>{data.titulo}</h1>
-      <img width={400} src={data.imagen} alt={data.titulo} />
-      <p>${data.precio}</p>
-      <p>Stock:{data.stock}</p>
-      <p>Categoria:{data.categoria}</p>
-      <p>Descripcion:{data.descripcion}</p>
-    </div>
+    <ItemDetail data={data}/>
   )
 }
 
