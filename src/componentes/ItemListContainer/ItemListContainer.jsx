@@ -1,31 +1,48 @@
 import React, { useState, useEffect } from 'react'
-import productos from '../../data/productos.json'
 import './ItemListContainer.css'
 import { Link, useParams } from 'react-router-dom'
+import { getDocs, collection, query, where } from 'firebase/firestore'
+import db from '../../db/db.js'
 const ItemListContainer = () => {
 
-  const [data, setData] = useState(productos)
+  const [data, setData] = useState([])
   const {categoria} = useParams()
 
-  const TryData = () => {
-    return new Promise((resolve, reject) => {
-      resolve(productos)
-      reject('Error')
-    })
-  }
-  useEffect(() => {
-    TryData()
-      .then((res) => {
-        if (categoria) {
-          const filtrados =(res.filter((item) => item.categoria === categoria))
-          setData(filtrados)
+  const getProducts = async() => {
+    const productosRef = collection(db, 'productos')
+    const dataDb = await getDocs(productosRef)
 
-        } else {
-          setData(res);
-        }
-      })
-    .catch((err) => console.log(err))
-  },[categoria]) 
+    const datos = dataDb.docs.map((productDb) => {
+      return {id : productDb.id ,...productDb.data()}
+    })
+
+    setData(datos)
+  }
+
+
+  const getDataByCategory = async() => {
+    const productosRef = collection(db, 'productos')
+    const q = query(productosRef, where('categoria', '==', categoria))
+    const dataDb = await getDocs(q)
+
+    const datos = dataDb.docs.map((productDb) => {
+      return {id : productDb.id ,...productDb.data()}
+    })
+
+    setData(datos)
+  }
+
+  useEffect(() => {
+    if(categoria){
+      getDataByCategory()
+    }else{
+      getProducts()
+    }
+  }, [categoria])
+
+  if (data.length === 0) {
+    return <div>Cargando...</div>
+  }
 
   return (
     <div >

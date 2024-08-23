@@ -1,33 +1,22 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import productos from '../../data/productos.json'
+import { getDoc, doc } from 'firebase/firestore'
 import ItemDetail from './ItemDetail'
+import db from '../../db/db.js'
 
 const ItemDetailContainer = () => {
   const [data, setData] = useState(null)
   const { id } = useParams()
 
-  const TryData = () => {
-    return new Promise((resolve, reject) => {
-      if (productos) {
-        resolve(productos)
-      } else {
-        reject(console.log(err))
-      }
-    })
+  const getProduct = async () => {
+    const docRef = doc(db, 'productos', id)
+    const dataDb = await getDoc(docRef)
+
+    setData({id: dataDb.id, ...dataDb.data()})
   }
 
   useEffect(() => {
-    TryData()
-      .then((res) => {
-        const filtrado = res.find((item) => item.id === parseInt(id))
-        if (filtrado) {
-          setData(filtrado)
-        } else {
-          console.log('Item not found')
-        }
-      })
-      .catch((err) => console.log(err))
+    getProduct()
   }, [id])
 
   if (!data) {

@@ -11,7 +11,7 @@ const CartWidget = () => {
   return (
     <Link to ={'/cart'}>
       <BsCart3 size={50} className='carrito' />
-      <p className='cantidadCarrito'>{cantidad >0 && cantidad}</p>
+      <p className={cantidad >0 ? 'cantidadCarrito' : 'oculto'}>{cantidad >0 && cantidad}</p>
     </Link>
   )
 }
