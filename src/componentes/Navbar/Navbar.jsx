@@ -3,7 +3,7 @@ import Logo from '../../multimedia/logo.png'
 import CartWidget from './CartWidget'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
-const Navbar = () => {
+const NavBar = () => {
   return (
     <nav>
       <Link to={"/"} className='logo'>
@@ -21,4 +21,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavBar
