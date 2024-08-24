@@ -23,13 +23,17 @@ const Cart = () => {
       <ul className='listaProductos'>
         {cart.map( (productoCarrito) => (
             <li className='filaProducto' key={productoCarrito.id}>
+              <Link to={`/detalle/${productoCarrito.id}`}>
                 <img width={150} src={productoCarrito.imagen} alt={productoCarrito.titulo}  />
-                <h3>{productoCarrito.titulo}</h3>
+              </Link>
+              <Link to={`/detalle/${productoCarrito.id}`}>
+                <h3>{productoCarrito.titulo}</h3> 
+              </Link>
                 <p>Cantidad: {productoCarrito.cantidad}</p>
                 <p>Precio unitario: ${productoCarrito.precio}</p>
                 <p>Subtotal: ${productoCarrito.precio * productoCarrito.cantidad}</p>
                 <button onClick={() => borrarProducto(productoCarrito.id)}>Eliminar</button>
-            </li>
+            </li> 
         ))}
       </ul>
       <h2 className='total'>Total: ${precioTotal()}</h2>
