@@ -12,6 +12,8 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+    background-color: skyblue;
+    margin: 0px;
 }
 
 .total{
@@ -31,4 +33,13 @@
     border-radius: 5px;
     padding: 0.5rem;
     color: white !important;
+}
+.borrar{
+    cursor: pointer;
+    background-color: red ;
+}
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(214, 232, 247);
 }

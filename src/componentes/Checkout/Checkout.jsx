@@ -7,6 +7,7 @@ import FormularioCheckout from "./FormularioCheckout";
 import db from "../../db/db";
 import validarFormulario from "../../utils/validacionFormulario";
 import { toast } from "react-toastify";
+import "./Checkout.css"
 
 const Checkout = () => {
   const [datos, setDatos] = useState({
@@ -53,7 +54,7 @@ const Checkout = () => {
 
   if (idOrden) {
     return (
-      <div>
+      <div className="fincheckout">
         <h2>Gracias por su compra</h2>
         <h3>Tu codigo de orden es: {idOrden}</h3>
       </div>

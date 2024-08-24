@@ -1,6 +1,7 @@
 .tarjetas{
     border-radius: 5px;
     border-color: black;
+    width: 101% !important;
 }
 .tarjeta{
     display: flex;

@@ -3,7 +3,7 @@ import { object, string} from 'yup'
 let userSchema = object({
     nombre: string().required("Eror en el nombre"),
     email: string().email().required("Error en el mail"),
-    telefono: string().required("Error en el telefono"),
+    telefono: string()
 })
 
 const validarFormulario = async(data) => {

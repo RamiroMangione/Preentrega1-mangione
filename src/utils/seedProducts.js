@@ -49,7 +49,7 @@ const productos =[
         precio: 5.99,
         stock: 80,
         categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
+        imagen: "https://cdn.flipsnack.com/template/4708/small/page_1?v=1675413277"
     },
     {
         id: 7,
@@ -57,7 +57,7 @@ const productos =[
         precio: 12.99,
         stock: 40,
         categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
+        imagen: "https://i.calameoassets.com/240401001131-5f9118b3ba032acf0dfd918325cef862/large.jpg"
     },
     {
         id: 8,
@@ -65,7 +65,7 @@ const productos =[
         precio: 7.99,
         stock: 90,
         categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
+        imagen: "https://revistacunsurori.com/public/journals/1/cover_issue_10_es_ES.png"
     },
     {
         id: 9,
@@ -73,7 +73,7 @@ const productos =[
         precio: 9.49,
         stock: 70,
         categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
+        imagen: "https://media.vogue.mx/photos/5c072b47460eb1e5e52e2dc4/master/pass/vogue_mexico__octubre_2011_2399.jpg"
     },
     {
         id: 10,
@@ -81,7 +81,7 @@ const productos =[
         precio: 11.99,
         stock: 55,
         categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
+        imagen: "https://revistas.ute.edu.ec/public/journals/4/cover_issue_80_es_ES.png"
     },
     {
         id: 11,
@@ -89,7 +89,7 @@ const productos =[
         precio: 6.49,
         stock: 65,
         categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
+        imagen: "https://ahira.com.ar/wp-content/uploads/2019/08/RevCienFiccyFanta-2-TAPA-1.jpg"
     },
     {
         id: 12,
@@ -97,151 +97,7 @@ const productos =[
         precio: 8.49,
         stock: 85,
         categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
-    },
-    {
-        id: 13,
-        titulo: "revista música y cine",
-        precio: 7.99,
-        stock: 95,
-        categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
-    },
-    {
-        id: 14,
-        titulo: "revista literatura y poesía",
-        precio: 5.49,
-        stock: 45,
-        categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
-    },
-    {
-        id: 15,
-        titulo: "revista ciencia popular",
-        precio: 9.99,
-        stock: 60,
-        categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
-    },
-    {
-        id: 16,
-        titulo: "revista viajes exóticos",
-        precio: 10.49,
-        stock: 35,
-        categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
-    },
-    {
-        id: 17,
-        titulo: "revista salud y bienestar",
-        precio: 6.99,
-        stock: 75,
-        categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
-    },
-    {
-        id: 18,
-        titulo: "revista tecnología actual",
-        precio: 12.49,
-        stock: 50,
-        categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
-    },
-    {
-        id: 19,
-        titulo: "revista deportes extremos",
-        precio: 8.99,
-        stock: 70,
-        categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
-    },
-    {
-        id: 20,
-        titulo: "revista hogar y jardín",
-        precio: 9.49,
-        stock: 55,
-        categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
-    },
-    {
-        id: 21,
-        titulo: "revista historia contemporánea",
-        precio: 7.49,
-        stock: 65,
-        categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
-    },
-    {
-        id: 22,
-        titulo: "revista ciencia y futuro",
-        precio: 11.49,
-        stock: 80,
-        categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
-    },
-    {
-        id: 23,
-        titulo: "revista cocina internacional",
-        precio: 10.99,
-        stock: 45,
-        categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
-    },
-    {
-        id: 24,
-        titulo: "revista fotografía profesional",
-        precio: 8.99,
-        stock: 85,
-        categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
-    },
-    {
-        id: 25,
-        titulo: "revista música clásica",
-        precio: 6.49,
-        stock: 75,
-        categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
-    },
-    {
-        id: 26,
-        titulo: "revista moda juvenil",
-        precio: 7.99,
-        stock: 95,
-        categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
-    },
-    {
-        id: 27,
-        titulo: "revista economía global",
-        precio: 11.99,
-        stock: 50,
-        categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
-    },
-    {
-        id: 28,
-        titulo: "revista ciencia aplicada",
-        precio: 9.49,
-        stock: 70,
-        categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
-    },
-    {
-        id: 29,
-        titulo: "revista viajes nacionales",
-        precio: 10.49,
-        stock: 60,
-        categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
-    },
-    {
-        id: 30,
-        titulo: "revista salud natural",
-        precio: 6.99,
-        stock: 40,
-        categoria: "revistas",
-        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
+        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG22cqG__KeEHtAF0LZgPXZtCANrQ9h1fgpA&s"
     },
     {
         id: 31,
@@ -307,7 +163,7 @@ const productos =[
         categoria: "otros",
         imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s"
     }
-];
+]
 
 const seedProducts =  () => {
     productos.map(({id, ...rest}) => {

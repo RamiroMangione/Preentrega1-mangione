@@ -10,10 +10,10 @@ const Navbar = () => {
         <img src={Logo} width="100px" alt="Logo DyRx" />
       </Link>
         <ul>
-          <li><Link to={"/"}>inicio</Link> </li>
-          <li><Link to={"/categoria/diarios"}>Diarios</Link></li>
-          <li><Link to={"/categoria/revistas"}>Revistas</Link></li>
-          <li><Link to={"/categoria/otros"}>Otros</Link></li>
+          <li><Link to={"/"}><h3>Inicio</h3></Link> </li>
+          <li><Link to={"/categoria/diarios"}><h3>Diarios</h3></Link></li>
+          <li><Link to={"/categoria/revistas"}><h3>Revistas</h3></Link></li>
+          <li><Link to={"/categoria/otros"}><h3>otros</h3></Link></li>
         </ul>
 
       <CartWidget />

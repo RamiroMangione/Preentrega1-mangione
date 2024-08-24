@@ -16,15 +16,17 @@ const ItemDetail = ({data}) => {
     setMostrarItemCount(false)
   }
   return (
-    <div className='container'>
+    <div className='contenedor '>
+      <div className=''>
       <h1>{data.titulo}</h1>
       <img width={400} src={data.imagen} alt={data.titulo} />
+      </div>
+      <div className='info'>
       <p>${data.precio}</p>
       <p>Stock:{data.stock}</p>
       <p>Categoria:{data.categoria}</p>
-      <p>Descripcion:{data.descripcion}</p>
       {mostrarItemCount ? (<ItemCount stock={data.stock} agregarAlCarrito={agregarAlCarrito}/>) : (<Link to="/cart" className='irAlCarrito'>ir al carrito</Link>)}
-      
+      </div>
     </div>
   )
 }

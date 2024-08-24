@@ -1,9 +1,9 @@
 import React from 'react'
-
+import "./Checkout.css"
 const FormularioCheckout = ({datos, handleChangeInput, handleSubmit}) => {
   return (
-    <div>
-        <form onSubmit={handleSubmit}>
+    <div >
+        <form className='form' onSubmit={handleSubmit}>
         <label > Nombre</label>
         <input type="text" name='nombre' value={datos.nombre} onChange={handleChangeInput} />
         <label> Email</label>
