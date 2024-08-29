@@ -4,7 +4,7 @@ import { ToastContainer } from 'react-toastify'
 
 import ItemDetailContainer from './componentes/ItemDetail/ItemDetailContainer'
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
-import NavBar from './componentes/Navbar/NavBar'
+import NavBar from './componentes/Navbar/Navbar'
 import Cart from './componentes/Cart/Cart'
 import Checkout from './componentes/Checkout/Checkout'
 import { CartProvider } from './context/CartContext'
